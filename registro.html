@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Vacinação | Registro </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1ac1d08487.js" crossorigin="anonymous"></script><!-- Fonte dos icones -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/scriptRegistro.js"></script>
+  
+</head>
+<style>
+    .conteiner{
+        max-height: 100vh;
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <div class="conteiner">
+      
+
+        <div class="content second"> <!-- espaço do login -->
+        <form>
+            <h3>Faça Login</h3><br>
+            <div class="social-media">
+                <ul class="lista-social-media">
+                    <li class="item"><a href="https://pt-br.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                    <li class="item"><a href="https://www.google.com/intl/pt-BR/account/about/"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="item"><a href="https://br.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div><!-- fim do social media --> 
+            
+            <br><p>ou insira os seus dados pessoais</p>
+           
+            <input   class="inputs" type="text" name="cadastroId" placeholder="Usuario" required onchange="verificaCad()" id="cadastroId">
+            <small class="smalSpan" id="smallIdRegistro"></small>
+            <input   class="inputs" type="text" name="emailId" placeholder="Email" required onchange="verificaCad()" id="emailId">
+            <small class="smalSpan" id="smallId4Registro"></small>
+            <input class="inputs"  type="password" name="senhaCadId" placeholder="Senha" required onchange="verificaCad()" id="senhaCadId">
+            <small class="smalSpan" id="smallId2Registro"></small>
+            <small class="smalSpan" id="smallId3Registro"></small>
+            <input type="button" name="entrar" value="Cadastrar" onclick="cadastrar()">
+            <a class="link_a" href="login.html" >Já possui conta? faça o login aqui</a>
+        </form>
+    </div> <!-- fim do conteiner -->
+
+</body>
+</html>

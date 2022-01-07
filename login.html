@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Vacinação | Login </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1ac1d08487.js" crossorigin="anonymous"></script><!-- Fonte dos icones -->
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<style>
+    .conteiner{
+        max-height: 100vh;
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <div class="conteiner">
+        <div class="content first"> <!-- video -->
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/jV-uhu1aAqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="content second"> <!-- espaço do login -->
+        <form>
+            <h3>Faça Login</h3><br>
+            <div class="social-media">
+                <ul class="lista-social-media">
+                    <li class="item"><a href="https://pt-br.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                    <li class="item"><a href="https://www.google.com/intl/pt-BR/account/about/"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="item"><a href="https://br.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div><!-- fim do social media --> 
+            
+            <br><p>ou insira os seus dados pessoais</p>
+           
+            <input class="inputs" type="text" name="login" placeholder="username" id="loginId" value="" required onchange="verifica()">
+            <small class="smalSpan" id="smallId"></small>
+            <input class="inputs" type="password" name="senha" placeholder="password" id="senhaId" value="" required onchange="verifica()">
+            <small class="smalSpan" id="smallId2"></small>
+            <small class="smalSpan" id="smallId3"></small>
+            <input type="button" name="entrar" value="Entrar" onclick="enviar()">
+            <a class="link_a" href="registro.html" >Cadastre-se aqui </a>
+        </form>
+    </div> <!-- fim do conteiner -->
+
+</body>
+</html>
